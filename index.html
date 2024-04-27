@@ -16,6 +16,9 @@
       section {
         padding: 3.75rem 0;
       }
+      .cursor-pointer {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -89,11 +92,17 @@
             </a>
           </div>
           <div class="col-md-5 d-none d-md-block">
-            <img
-              class="img-fluid"
-              src="assets/ebook-cover.png"
-              alt="ebook cover"
-            />
+            <span
+              class="tt"
+              data-bs-placement="bottom"
+              title="Net Ninja Book Cover"
+            >
+              <img
+                class="img-fluid cursor-pointer"
+                src="assets/ebook-cover.png"
+                alt="ebook cover"
+              />
+            </span>
           </div>
         </div>
       </div>
@@ -108,7 +117,7 @@
         </div>
 
         <div class="row justify-content-center align-items-center gx-0 my-5">
-          <div class="col-8 col-lg-4 col-xl-3">
+          <div class="col-8 col-lg-4 col-xl-3 cursor-pointer">
             <div class="card border-0 py-5">
               <div class="card-body text-center py-4">
                 <h5 class="card-title text-capitalize">starter edition</h5>
@@ -125,7 +134,7 @@
               </div>
             </div>
           </div>
-          <div class="col-9 col-lg-4">
+          <div class="col-9 col-lg-4 cursor-pointer">
             <div class="card border-2 border-primary">
               <p class="card-header text-capitalize text-primary text-center">
                 most popular
@@ -145,7 +154,7 @@
               </div>
             </div>
           </div>
-          <div class="col-8 col-lg-4 col-xl-3">
+          <div class="col-8 col-lg-4 col-xl-3 cursor-pointer">
             <div class="card border-0 py-5">
               <div class="card-body text-center py-4">
                 <h5 class="card-title text-capitalize">ultimate edition</h5>
@@ -177,7 +186,7 @@
         </div>
 
         <div class="row my-5 justify-content-around g-5 align-items-center">
-          <div class="col-6 col-lg-4">
+          <div class="col-6 col-lg-4 cursor-pointer">
             <img src="assets/kindle.png" class="img-fluid" alt="kindle image" />
           </div>
 
@@ -492,6 +501,13 @@
                     <option value="Content query">Content query</option>
                     <option value="Other query">Other query</option>
                   </select>
+                  <span
+                    class="input-group-text tt"
+                    data-bs-placement="bottom"
+                    title="Pretty self explanatory really..."
+                  >
+                    <i class="bi bi-question-circle-fill"></i>
+                  </span>
                 </div>
               </div>
               <div class="mb-3 flex-column">
@@ -515,5 +531,12 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((e) => {
+        new bootstrap.Tooltip(e);
+      });
+    </script>
   </body>
 </html>
