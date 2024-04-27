@@ -530,8 +530,87 @@
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- modal trigger -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="text-center">
+          <h2>Stay in The Loop</h2>
+          <p class="lead">Get the latest updates as they happen...</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="py-4 text-muted">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id,
+              facilis eveniet! Dicta, nam dolore! Ipsum velit rerum odio
+              veritatis obcaecati amet facere ut fuga non impedit quia cum
+              corrupti ad numquam provident, iure harum delectus eius dolores.
+              Impedit qui fugiat atque necessitatibus aspernatur debitis
+              praesentium quibusdam eligendi, enim voluptate! Totam!
+            </p>
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#reg-modal"
+            >
+              Register for Updates
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- modal itself -->
+   <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modal-title">
+              Get the Latest Updates
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              nostrum reiciendis eveniet modi voluptatibus! Ullam non,
+              cupiditate labore iste necessitatibus eligendi.
+            </p>
+            <label for="modal-email" class="form-label">Email address:</label>
+            <input
+              type="email"
+              id="modal-email"
+              class="form-control"
+              placeholder="e.g mario@example.com"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       const tooltips = document.querySelectorAll(".tt");
       tooltips.forEach((e) => {
