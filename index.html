@@ -109,7 +109,7 @@
 
         <div class="row justify-content-center align-items-center gx-0 my-5">
           <div class="col-8 col-lg-4 col-xl-3">
-            <div class="card border-0">
+            <div class="card border-0 py-5">
               <div class="card-body text-center py-4">
                 <h5 class="card-title text-capitalize">starter edition</h5>
                 <p class="card-subtitle lead">eBook download only</p>
@@ -146,7 +146,7 @@
             </div>
           </div>
           <div class="col-8 col-lg-4 col-xl-3">
-            <div class="card border-0">
+            <div class="card border-0 py-5">
               <div class="card-body text-center py-4">
                 <h5 class="card-title text-capitalize">ultimate edition</h5>
                 <p class="card-subtitle lead">download, updates & extras</p>
@@ -431,6 +431,84 @@
                 <small class="text-muted fw-bold">Review by Jackii</small>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">
+            Questions to ask? Fill out the form to contact me directly...
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form class="my-4">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-fill"></i>
+                  </span>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="e.g Mario@example.com"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label text-capitalize"
+                  >Name</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill"></i>
+                  </span>
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="e.g Mario"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label"
+                  >What is your question about?</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-chat-left-dots-fill"></i>
+                  </span>
+                  <select class="form-select" id="subject">
+                    <option selected>Open this select menu</option>
+                    <option value="Pricing query">Pricing query</option>
+                    <option value="Content query">Content query</option>
+                    <option value="Other query">Other query</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3 flex-column">
+                <div class="form-floating">
+                  <textarea
+                    id="query"
+                    class="w-100 ps-2 form-control"
+                    style="height: 140px"
+                    placeholder="enter your text here..."
+                  ></textarea>
+                  <label for="query" class="form-label">Your query...</label>
+                </div>
+              </div>
+              <div class="mt-5 text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
