@@ -13,7 +13,9 @@
 ##  🔐 Run locally 
 
 ```bash
+
 git clone https://github.com/Hager-elhwarii/The-Book.git
+
 ```
 
 ## 🦄   Author
