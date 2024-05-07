@@ -51,3 +51,5 @@
 // satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
 // & ********************** ---------------------------------- **********************
 // scoope => where variables are defined and accessed.
+// promise => 
+// SEO => 
